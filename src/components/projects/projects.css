@@ -1,0 +1,23 @@
+.projects-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.full-projects-btn {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgb(31, 31, 31);
+    color: white;
+    text-align: center;
+    width: 10rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.full-projects-btn:hover {
+   
+    padding: 1.5rem;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(29, 4, 84) 0%, rgb(114, 11, 110) 100%);
+}

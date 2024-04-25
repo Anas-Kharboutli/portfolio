@@ -1,0 +1,33 @@
+.hero-section {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    
+}
+
+.portrait img {
+    width: 16rem;
+    height: 19rem;
+    border-radius: 0.75rem;
+}
+
+.hero-description {
+    margin-top: 4rem;
+}
+
+.hero-description h1 {
+    font-size: 4rem;
+    text-align: start;
+    margin-bottom: 0;
+    
+}
+
+.hero-description h2 {
+    margin-bottom: 2rem;
+}
+.hero-description button {
+    margin-top: 1rem;
+    background: black;
+    color: white;
+    padding: 0.5rem;
+
+}
