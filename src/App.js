@@ -1,5 +1,5 @@
 import './App.css';
-import { NavBar, EyesShape, Hero, Skills, AboutMe, Projects, WorkExperience, Contact, Footer, PageRoutes } from './components/exports';
+import { NavBar, PageRoutes } from './components/exports';
 
 
 function App() {
@@ -7,17 +7,10 @@ function App() {
     <div className="App">
       <div className='navbar'>
       <NavBar />
-      
       </div>
-      <EyesShape />
-      <Hero />
-      <Skills />
-      <Projects />
+
       <PageRoutes />
-      <AboutMe />
-      <WorkExperience />
-      <Contact />
-      <Footer />
+
     </div>
   );
 }

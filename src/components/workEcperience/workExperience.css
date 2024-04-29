@@ -1,0 +1,44 @@
+.work-experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.accenture-container {
+    border-right: 2px solid rgb(192, 192, 209);
+
+}
+
+.accenture-container {
+    padding: 0 2rem 0 0;
+}
+
+.cognizant-container {
+    padding: 0 2rem 0 4rem;
+}
+
+.accenture-container img,
+.cognizant-container img{
+    width: 10rem; 
+    height: auto;   
+    margin-bottom: 0.5rem;
+}
+
+.accenture-container p:first-of-type,
+.cognizant-container p:first-of-type{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.accenture-container p:last-of-type,
+.cognizant-container p:last-of-type{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0.8rem 0 0.3rem;
+}
+
+.accenture-container ul,
+.cognizant-container ul{
+    list-style: circle;  
+    line-height: 1.2rem;
+}

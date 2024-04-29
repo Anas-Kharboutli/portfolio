@@ -1,0 +1,40 @@
+.contact-container {
+    background: rgb(240, 240, 236);
+    margin: 1rem 4rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label{
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 0.5rem;
+}
+
+.form-container input {
+    border: none;
+    height: 3rem;
+}
+
+.form-container button {
+    border: none;
+    background: black;
+    color: white;
+    padding: 0.8rem;
+}
+

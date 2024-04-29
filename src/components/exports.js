@@ -8,10 +8,14 @@ import WorkExperience from "./workEcperience/WorkExperience";
 import Contact        from "./contact/Contact";
 import Footer         from "./footer/Footer"; 
 import PageRoutes     from "./routes";
-
+import Blog           from "./blog/Blog";
+import AllProjects    from "./projects/allProjects/AllProjects";
+import Home           from "../container/home/Home";
+ 
 
 export { 
     NavBar, 
+    Home,
     EyesShape, 
     Hero, 
     Skills, 
@@ -20,5 +24,7 @@ export {
     WorkExperience,
     Contact,
     Footer,
-    PageRoutes
+    PageRoutes,
+    Blog,
+    AllProjects
 };

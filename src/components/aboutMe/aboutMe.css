@@ -1,0 +1,26 @@
+.about-me-container {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+
+}
+
+.about-img img {
+    width: 20rem;
+    height: 15rem;
+    opacity: 0.75;
+    border-radius: 15px 40px;
+}
+
+.about-description h1 {
+    text-align: start;
+    margin: 0;
+}
+
+.about-description button {
+    border: none;
+    padding: 1rem;
+    background: black;
+    color: white;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}

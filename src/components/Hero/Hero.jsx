@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className='hero-section section__padding'>
+    <section className='hero-section section__padding' id='home'>
       <div className='portrait'>
         <img src='/images/my-portrait.png' alt='my-portrait' />
       </div>

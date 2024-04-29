@@ -1,0 +1,28 @@
+.footer-container {
+    background: black;
+    margin-top: 5rem;
+    color: white;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.navigation h2 {
+    margin: 0 0 1.3rem;
+    font-size: 2rem;
+}
+
+.navigation ul {
+    list-style: none;
+    line-height: 2rem;
+}
+
+.navigation li {
+    color: rgb(182, 167, 167);
+}
+
+.navigation li:hover {
+    color: #fff;
+}

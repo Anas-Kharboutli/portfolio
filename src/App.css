@@ -2,14 +2,11 @@
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-
-  
+  box-sizing: border-box; 
 }
 
 body {
   background: #fff;
-
 }
 
 a {
@@ -18,9 +15,15 @@ a {
 }
 
 .section__padding {
-  padding: 4rem 4rem;
+  padding: 3rem 4rem;
 }
 
 .section__margin {
   margin: 4rem 6rem;
+}
+
+.navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }

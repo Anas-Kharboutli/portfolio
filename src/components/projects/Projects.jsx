@@ -10,7 +10,7 @@ const Projects = () => {
       <h1>Projects</h1>
 
       <div className='full-projects-btn'>
-        <Link to="/projects/allProjects/AllProjects">View All Work</Link>
+        <Link to="/allProjects">View All Work</Link>
       </div>
 
       <div className='projects-cards'>
@@ -30,7 +30,7 @@ const Projects = () => {
       </div>
 
       <div className='full-projects-btn'>
-        <Link to="/projects/allProjects/AllProjects">View All Work</Link>
+      <Link to="/allProjects">View All Work</Link>
       </div>
     </div>
   )
