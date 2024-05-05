@@ -46,7 +46,8 @@ export const all_Projects = [
         imgPath: "/images/sample-img.jpg",
         previewUrl: "#",
         gitUrl: "https://github.com/Anas-Kharboutli",
-        languages: ["ReactJS" , "ExpressJS", "MongoDB"]
+        languages: ["ReactJS" , "ExpressJS", "MongoDB"],
+        tag: ["All", "MERN"]
     },
     {
         id: 2,
@@ -55,7 +56,8 @@ export const all_Projects = [
         imgPath: "/images/sample-img.jpg",
         previewUrl: "#",
         gitUrl: "https://github.com/Anas-Kharboutli",
-        languages: ["ReactJS" , "ExpressJS", "MongoDB"]
+        languages: ["ReactJS" , "ExpressJS", "MongoDB"],
+        tag: ["All", "MERN"]
     },
     {
         id: 3,
@@ -64,7 +66,8 @@ export const all_Projects = [
         imgPath: "/images/sample-img.jpg",
         previewUrl: "#",
         gitUrl: "https://github.com/Anas-Kharboutli",
-        languages: ["JavaScript" , "HTML5", "CSS3"]
+        languages: ["JavaScript" , "HTML5", "CSS3"],
+        tag: ["All", "React"]
     },
     {
         id: 4,
@@ -73,7 +76,8 @@ export const all_Projects = [
         imgPath: "/images/sample-img.jpg",
         previewUrl: "#",
         gitUrl: "https://github.com/Anas-Kharboutli",
-        languages: ["JavaScript" , "HTML5", "CSS3"]
+        languages: ["JavaScript" , "HTML5", "CSS3"],
+        tag: ["All", "HTML | CSS | JS"]
     },
    
 ];

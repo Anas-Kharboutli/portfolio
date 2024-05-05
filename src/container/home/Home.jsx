@@ -6,15 +6,12 @@ import { EyesShape, Hero, Skills, AboutMe, Projects, WorkExperience, Contact, Fo
 const Home = () => {
   return (
     <React.Fragment>
-
-      
       <Hero />
       <Skills />
       <Projects />
       <AboutMe />
       <WorkExperience />
       <Contact />
-      <Footer />
     </React.Fragment>
   )
 }

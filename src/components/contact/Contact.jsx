@@ -25,15 +25,12 @@ const Contact = () => {
       );
   };
 
-
-
   return (
     show ? (
       <div className='contact-container'>
-      <h2>Let's get connected to discuss</h2>
+      <h2>Send me a message and let's get connected</h2>
 
-      
-       <form ref={form}>
+       <form ref={form} onSubmit={sendEmail}>
        <div className='form-container'>
 
        <div className='input-section'>
@@ -59,24 +56,24 @@ const Contact = () => {
 
        <div className='input-section'>
         <label htmlFor='message'>
-          Please Type Your Message To Me
+          Your Message To Me
         </label>
         <textarea type='text' id='message' 
         name="message"
-        cols={20} rows={5} required/> 
+        cols={20} rows={4} required/> 
        </div>
 
       
         <button type='submit' 
-                onClick={sendEmail}
                 value="Send"
                 >Send</button>
        </div>
        </form>  
     </div>
     ) : (
-      <div className='contact-container'>
-        <h1>We received your message</h1>
+      <div className='reply-message'>
+        <h1>I have received your message !</h1>
+        <h2>I'll be in touch with you shortly</h2>
       </div>     
     )  
   )

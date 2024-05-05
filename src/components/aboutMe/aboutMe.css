@@ -1,19 +1,47 @@
 .about-me-container {
     display: grid;
     grid-template-columns: 0.6fr 1fr;
+    padding: 0 4rem;
 
+}
+
+.about-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .about-img img {
     width: 20rem;
     height: 15rem;
-    opacity: 0.75;
     border-radius: 15px 40px;
+    box-shadow: 3px 3px 7px;
+    transform: skewY(0);
+    transition: all 1s ease-in-out;
+}
+
+.about-img img:hover {
+    transform: skewY(5deg);
+}
+
+.about-description p:first-child {
+    font-family: var(--font-looks);
+    font-size: 0.8rem;
+    padding: 0;
 }
 
 .about-description h1 {
     text-align: start;
-    margin: 0;
+    font-family: var(--font-rubik);
+    font-size: 2rem;
+    margin: 0.5rem 0 0.5rem;
+}
+
+.about-description p {
+    font-family: var(--font-rubik);
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding-bottom: 1.5rem;
 }
 
 .about-description button {
@@ -23,4 +51,85 @@
     color: white;
     border-radius: 0.5rem;
     margin-top: 1rem;
+}
+
+.contact-btn {
+    text-align: end;
+}
+.contact-btn button {
+    background: rgb(47, 45, 45);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.4rem;
+    margin: 0 3rem 0 0;
+    font-family: var(--font-rubik);
+    font-size: 1rem;
+    cursor: pointer;
+} 
+
+.contact-btn button:hover {
+    background: black;
+}
+
+@media (max-width: 1025px) {
+    .about-me-container {
+        gap: 2rem;
+    }
+
+    .contact-btn button {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 769px) {
+    .about-me-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .about-img {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-img img {
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .contact-btn {
+        text-align: start;
+    }
+
+    .contact-btn button {
+        margin-right: 0;
+    }
+
+    .about-description p:last-of-type {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 425px) {
+
+      .about-img {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .about-img img {
+        width: 17rem;
+        height: 12rem;
+    }
+
+    .about-description h1 {
+        font-size: 1.6rem;
+    }
+
+    .contact-btn button {
+        margin-top: 2rem;
+    }
 }

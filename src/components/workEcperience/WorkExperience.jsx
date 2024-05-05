@@ -4,7 +4,7 @@ import "./workExperience.css";
 const WorkExperience = () => {
   return (
     <div className='work-experience section__padding'>
-      <h1>Work Experience</h1>
+      <h1>WORK EXPERIENCE</h1>
       <div className='work-experience-container'>
         <div className='accenture-container'>
           <img className='co-icon' src='/images/Accenture-Logo.png' alt='accenture' />
@@ -39,6 +39,6 @@ const WorkExperience = () => {
       </div>
     </div>
   ) 
-}
+};  
 
 export default WorkExperience

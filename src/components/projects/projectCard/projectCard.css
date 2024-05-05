@@ -5,39 +5,44 @@
 
 .project-img {
     text-align: center;
-    padding: 1.2rem;
- 
+    padding: 1.2rem;   
 }
 
 .project-img img {
     border-radius: 0.3rem;
     width: 100%;
-    height: 15rem;
+    height: 14rem;
+    box-shadow: 2px 2px 5px;
 }
 
 .project-info h1 {
     text-align: start;
+    font-family: var(--font-rubik);
+    font-size: 1.5rem;
     padding-left: 1rem;
     margin: 0;
 }
-
+ 
 .project-info p {
     padding: 1rem;
+    font-family: var(--font-p);
 }
 
 .project-summary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    font-family: var(--font-p);
 }
 
 .project-summary p {
     padding: 0;
     text-align: start;
+    font-family: var(--font-rubik);
 }
+
 .project-summary p:first-child {
     padding-bottom: 1rem;
-    font-weight: 600;
+    font-weight: 550;
 }
 
 .project-preview,
@@ -49,23 +54,55 @@
 
 .project-preview p,
 .project-github p {
-    
     padding: 0;
     border-right: 1.5px solid rgb(232, 224, 224);
-   
+    
+}
+
+.project-languages p:first-child {
+    padding-bottom: 0.5rem;
 }
 
 .project-preview p:last-child,
 .project-github p:last-child {
-    padding-left: 1rem;
-}
-
-.icon:hover,
-.icon:hover {
-    width: 4rem;
+    padding-left: 1.5rem;
 }
 
 .project-languages ul {
     list-style: none;
 }
 
+
+@media (max-width: 769px) {
+    .project-img img {
+        width: 100%;
+        height: 11rem;
+    }
+
+    .project-info h1 {
+        font-size: 1.3rem;   
+    }
+
+    .project-summary p {
+        font-size: 0.6rem;
+    }
+
+    .project-preview,
+    .project-github {
+        padding-right: 0.5rem;
+    } 
+
+    .project-github p:last-child {
+        margin-left: 0.6rem;
+    }
+
+ 
+    .project-preview p:last-child,
+    .project-github p:last-child {
+        padding-left: 0;
+    }  
+
+    .project-languages ul {
+        font-size: 0.8rem;
+    }
+}

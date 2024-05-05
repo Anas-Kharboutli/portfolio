@@ -1,3 +1,10 @@
+.work-experience h1 {
+    font-family: var(--font-rubik);
+    text-align: center;
+    font-size: 2.5rem;  
+    margin-bottom: 3rem;  
+}
+
 .work-experience-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,19 +33,95 @@
 
 .accenture-container p:first-of-type,
 .cognizant-container p:first-of-type{
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: var(--font-rubik);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.accenture-container p,
+.cognizant-container p {
+    font-family: var(--font-rubik);
+
 }
 
 .accenture-container p:last-of-type,
 .cognizant-container p:last-of-type{
     font-size: 0.8rem;
     font-weight: bold;
-    margin: 0.8rem 0 0.3rem;
+    margin: 0.8rem 0 0.5rem;
 }
 
 .accenture-container ul,
 .cognizant-container ul{
+    font-family: var(--font-p);
+    line-height: 2rem;
     list-style: circle;  
     line-height: 1.2rem;
+}
+
+.accenture-container li,
+.cognizant-container li{
+    font-family: var(--font-p);
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1025px) {
+    .cognizant-container {
+        padding: 0 0 0 4rem;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .cognizant-container {
+        padding-left: 4rem;
+    }
+
+    .work-experience h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .accenture-container p:first-of-type,
+    .cognizant-container p:first-of-type{
+    font-size: 1.3rem;
+    }
+
+    .accenture-container li,
+    .cognizant-container li{
+    font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .work-experience-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .work-experience h1 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;  
+    }
+
+    .accenture-container {
+        border: none;
+        padding: 0 0 0 1rem;
+    }
+
+
+    .cognizant-container{
+        padding: 0 0 2rem 1rem;
+    
+    }
+
+    .accenture-container p:first-of-type,
+    .cognizant-container p:first-of-type{
+    font-size: 1.3rem;
+    }
+
+
+
 }

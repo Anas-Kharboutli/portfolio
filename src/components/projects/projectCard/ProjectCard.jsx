@@ -29,9 +29,9 @@ const ProjectCard = ({imgPath, title, description, gitUrl, previewUrl, languages
                   <BsGithub size={35} />
                 </a></p>
             </div>
-
+ 
             <div className='project-languages'>
-                <p>Built Using</p>
+                <p>Built With</p>
                 <div className='languages-list'>{languages && languages.map((language, index) => (
                   <ul key={index}>
                     <li >

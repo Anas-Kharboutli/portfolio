@@ -1,5 +1,5 @@
 import './App.css';
-import { NavBar, PageRoutes } from './components/exports';
+import { NavBar, PageRoutes, Footer } from './components/exports';
 
 
 function App() {
@@ -8,9 +8,8 @@ function App() {
       <div className='navbar'>
       <NavBar />
       </div>
-
       <PageRoutes />
-
+      <Footer />
     </div>
   );
 }

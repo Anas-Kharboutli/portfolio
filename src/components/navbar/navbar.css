@@ -57,6 +57,14 @@ nav {
     gap: 1.5rem;
 }
 
+.linkedin-icon {
+    color: rgb(49, 62, 178);
+    font-size: 2rem;
+}
+
+.github-icon {
+    font-size: 2.1rem;
+}
 
 
 .mobile-menu {

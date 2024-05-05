@@ -1,40 +1,34 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import "./footer.css";
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-  const navigate= useNavigate();
-
-  useEffect(()=> {
-    navigate("/");
-  }, [navigate])
 
   return (
     <div className='footer-container'>
       <div className='footer-content section__padding'>
-        <div className='heading'>
-          <h1>We only live once</h1>
+        <div className='footer-heading'>
+          <h1>We are defined by the impact we make</h1>
+          <h2>Let's make it a great one</h2>
         </div>
 
         <div className='navigation'>
           <h2>Navigation</h2>
         <ul>
-        <li className='nav-item'>
-          <a href='/' onClick={() => navigate}>Home</a>
+        <li>
+        <Link className='nav-item' to="/">Home</Link>
         </li>
-        <li className='nav-item'>
-          <Link to="/allProjects">latest Work</Link>
+        <li>
+          <Link className='nav-item' to="/allProjects">latest Work</Link>
         </li>
-        <li className='nav-item'>
-          <Link to="/blog" >Blog</Link>
+        <li>
+          <Link className='nav-item' to="/blog" >Blog</Link>
         </li>
-        <li className='nav-item'>
-        <Link to="/contact" >Contact</Link>
+        <li>
+        <Link className='nav-item' to="/contact" >Contact</Link>
         </li>
        </ul>
         </div>
-
       </div>
     </div>
   )

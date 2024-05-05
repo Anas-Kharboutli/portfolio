@@ -9,20 +9,117 @@
     grid-template-columns: 1fr 0.5fr;
 }
 
+.footer-heading {
+    margin-left: 4rem;
+}
+
+.footer-heading h1 {
+    font-family: var(--font-p);
+    margin: 0 4rem 2rem 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.footer-heading h2 {
+    font-family: var(--font-p);
+    margin: 0 4rem 2rem 0;
+    font-size: 2rem;
+    font-weight: 400;
+    color: aquamarine ;
+}
+
+.navigation {
+    margin-left: 8rem;
+}
 .navigation h2 {
+    font-family: var(--font-rubik);
     margin: 0 0 1.3rem;
     font-size: 2rem;
+    font-weight: 400;
 }
 
 .navigation ul {
     list-style: none;
-    line-height: 2rem;
+    line-height: 2.3rem;
 }
 
 .navigation li {
     color: rgb(182, 167, 167);
+    font-family: var(--font-p);
 }
 
 .navigation li:hover {
     color: #fff;
+}
+
+@media (max-width: 1025px) {
+
+    .navigation h2 {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .footer-heading h1 {
+        font-size: 2.3rem;
+    }
+    
+    .footer-heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .navigation h2 {
+        font-size: 1.3rem;
+    }
+
+    .navigation ul {
+        line-height: 1.8rem;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .footer-content {
+        padding: 2.5rem 2rem;
+    }
+
+    .footer-heading {
+        margin: 0 1.2rem 0 0;
+    }
+
+    .footer-heading h1 {
+        font-size: 1.8rem;
+        margin: 0 0 1rem 0;
+    }
+    
+    .footer-heading h2 {
+        font-size: 1.3rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .navigation {
+        margin-left: 2rem;
+    }
+
+    .navigation h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .navigation ul {
+        line-height: 1.6rem;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
+    }
 }

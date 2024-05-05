@@ -23,10 +23,10 @@ const NameLogo = () => {
 const Icons = () => (
   <React.Fragment>
     <a href='https://www.linkedin.com/in/anas-kharboutli' target='_blank' rel="noreferrer">
-        <FaLinkedin size={30}/>
+        <FaLinkedin className='linkedin-icon' />
         </a>
       <a href='https://github.com/Anas-Kharboutli' target='_blank' rel="noreferrer">
-      <AiOutlineGithub size={33}/>
+      <AiOutlineGithub className='github-icon' />
       </a>
   </React.Fragment>
 );
@@ -39,7 +39,7 @@ const NavBar = () => {
        
       <ul>
           <li className='nav-item'>
-            <Link to="/" onClick={() => setToggleMenu(false)}>About</Link>
+            <Link to="/" onClick={() => setToggleMenu(false)}>Home</Link>
           </li>
           <li className='nav-item'>
             <Link to="/allProjects" onClick={() => setToggleMenu(false)}>All Projects</Link>

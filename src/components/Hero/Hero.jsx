@@ -2,10 +2,11 @@ import React from 'react';
 import "./hero.css";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
-const Hero = () => {
+const Hero = () => { 
   return (
-    <section className='hero-section section__padding' id='home'>
+    <section className='hero-section section__padding'>
       <div className='portrait'>
         <img src='/images/my-portrait.png' alt='my-portrait' />
       </div>
@@ -23,8 +24,8 @@ const Hero = () => {
         
         'Full Stack Web Developer',
         1500, 
-        'Happy to Connect !',
-        2500,
+        'Let us Connect !',
+        1500,
        
       ]}
       wrapper="span"
@@ -39,7 +40,8 @@ const Hero = () => {
           digital experience.
         </p>
 
-        <button><a href='#'>Let's Talk</a></button>
+        <Link to='/contact'><button>Let's Talk</button></Link>
+      
       </motion.div>
     </section>
   )

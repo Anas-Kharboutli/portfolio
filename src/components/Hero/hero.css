@@ -1,33 +1,143 @@
 .hero-section {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    
 }
 
 .portrait img {
+    margin-top: 1.5rem;
     width: 16rem;
     height: 19rem;
     border-radius: 0.75rem;
 }
 
 .hero-description {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+}
+
+.hero-description p:first-child {
+    font-size: 0.8rem;
+    font-family: var(--font-looks);
+}
+
+.hero-description p:last-of-type {
+    font-family: var(--font-p);
+    font-size: 1.2rem;
 }
 
 .hero-description h1 {
     font-size: 4rem;
     text-align: start;
     margin-bottom: 0;
-    
+    font-family: var(--font-rubik);
 }
 
 .hero-description h2 {
     margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-p);
 }
-.hero-description button {
-    margin-top: 1rem;
-    background: black;
-    color: white;
-    padding: 0.5rem;
 
+.hero-description button {
+    margin-top: 1.5rem;
+    background: rgb(39, 38, 38);
+    border-radius: 0.3rem;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.hero-description button:hover {
+    background: black;
+    cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+
+    .portrait img {
+        width: 12.5rem;
+        height: 15rem;
+    }
+
+    .hero-description h1 {
+        font-size: 3rem;
+    }
+
+    .hero-description h2 {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-section {
+        gap: 2rem;
+    }
+
+    .portrait img {
+        margin-top: 1rem;
+        width: 11rem;
+        height: 13.5rem;
+    }
+
+    .hero-description h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-description h2 {
+        font-size: 0.8rem;
+    }
+
+    .hero-description p:first-child {
+        font-size: 0.7rem;
+
+    }
+    
+    .hero-description p:last-of-type {
+        font-size: 1rem;
+    }
+
+    .hero-description button {
+        margin-top: 1rem;
+        padding: 0.7rem 1.1rem;
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .hero-section {
+        gap: 1rem;
+        padding: 1rem 1.5rem 1rem;
+    }
+
+    .portrait img {
+        margin-top: 1.5rem;
+        width: 6.5rem;
+        height: 8rem;
+    }
+
+    .hero-description h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero-description h2 {
+        font-size: 0.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description p:first-child {
+        font-size: 0.6rem;
+
+    }
+    
+    .hero-description p:last-of-type {
+        font-size: 0.7rem;
+    }
+
+    .hero-description button {
+        margin-top: 1rem;
+        padding: 0.3rem 0.8rem;
+        font-size: 0.7rem;
+    }
+    
 }

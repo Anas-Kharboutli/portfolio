@@ -1,12 +1,14 @@
 .contact-container {
     background: rgb(240, 240, 236);
-    margin: 1rem 4rem;
+    margin: 1rem 3rem;
     padding: 2rem;
     border-radius: 0.3rem;
 }
 
-h2 {
-    font-size: 2.5rem;
+.contact-container h2 {
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    font-size: 2.1rem;
     margin-bottom: 3rem;
 }
 
@@ -22,19 +24,116 @@ h2 {
 }
 
 .form-container label{
-    font-family:'Courier New', Courier, monospace;
+    font-family: var(--font-p);
+    font-size: 0.9rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .form-container input {
+    font-size: 1.3rem;
+    font-family: var(--font-rubik);
     border: none;
     height: 3rem;
 }
 
+.form-container textarea {
+    font-family: var(--font-rubik);
+    font-size: 1.2rem;
+    border: none;
+}
+
 .form-container button {
     border: none;
-    background: black;
+    background: rgb(42, 41, 41);
     color: white;
     padding: 0.8rem;
+    border-radius: 0.3rem;
 }
+
+.form-container button:hover {
+    background: black;
+}
+
+.reply-message {
+    background: rgb(240, 240, 236);
+    margin: 1rem 4rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.reply-message h1 {
+    font-family: var(--font-rubik);
+    color: rgb(9, 61, 9);
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.reply-message h2 {
+    font-family: var(--font-manrope);
+    font-weight: 400;
+    font-size: 2rem;
+    
+}
+
+@media (max-width: 769px) {
+    .contact-container h2 {
+        font-size: 1.7rem;
+    }
+
+    .form-container label{
+        font-size: 0.8rem;
+    }
+
+    .form-container input {
+        font-size: 0.9rem;
+
+    }
+    
+    .form-container textarea {
+        font-size: 0.9rem;
+    }
+
+    .reply-message h1 {
+        font-size: 2rem;
+    }
+    
+    .reply-message h2 {
+        font-size: 1.5rem; 
+    }
+}
+
+@media (max-width: 425px) {
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contact-container h2 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .form-container label{
+        font-size: 0.7rem;
+    }
+
+    .form-container button {
+        width: 5rem;
+    }
+
+    .reply-message h1 {
+        font-size: 1.5rem;
+    }
+    
+    .reply-message h2 {
+        font-size: 1rem; 
+    }
+}
+
+
 
