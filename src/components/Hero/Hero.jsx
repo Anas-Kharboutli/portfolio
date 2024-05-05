@@ -24,7 +24,7 @@ const Hero = () => {
         
         'Full Stack Web Developer',
         1500, 
-        'Let us Connect !',
+        'Welcome to Connect !',
         1500,
        
       ]}

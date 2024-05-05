@@ -1,0 +1,63 @@
+        .main {
+            background-color: black;
+        }
+        
+        .eyes {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            text-align: center;
+            width: 100%;
+        }
+        .eye {
+            background-color: white;
+            width: 200px;
+            height: 100px;
+            border-radius: 50%;
+            position: relative;
+            display: inline-block;
+            margin: 40px;
+            overflow: hidden;
+        }
+        .ball {
+            background-color:rgb(157, 24, 109);
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .glow {
+            color: azure;
+            position: absolute;
+            left: 35%;
+            font-family: cursive;
+            font-weight: normal;
+            animation: glow 1s ease-in-out infinite alternate;
+            
+        }
+        @-webkit-keyframes glow {
+            from {
+                  text-shadow: 
+                  0 0 10px #fff, 0 0 
+                  20px #fff, 0 0 
+                  30px #e60073, 0 0 
+                  40px #e60073, 0 0 
+                  50px #e60073, 0 0 
+                  60px #e60073, 0 0 
+                  70px #e60073;
+                }
+            to {
+                  text-shadow: 
+                  0 0 20px #fff, 0 0 
+                  30px #ff4da6, 0 0 
+                  40px #ff4da6, 0 0 
+                  50px #ff4da6, 0 0 
+                  60px #ff4da6, 0 0 
+                  70px #ff4da6, 0 0 
+                  80px #ff4da6;
+                }
+        }

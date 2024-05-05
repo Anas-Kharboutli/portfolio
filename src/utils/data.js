@@ -79,5 +79,14 @@ export const all_Projects = [
         languages: ["JavaScript" , "HTML5", "CSS3"],
         tag: ["All", "HTML | CSS | JS"]
     },
-   
+    {
+        id: 5,
+        title: "Eye Movement",
+        description: "Eyes Moving",
+        imgPath: "/images/sample-img.jpg",
+        previewUrl: "/src/container/projects/eye-movement/index.html",
+        gitUrl: "https://github.com/Anas-Kharboutli",
+        languages: ["JavaScript" , "HTML5", "CSS3"],
+        tag: ["All", "HTML | CSS | JS"]
+    },
 ];

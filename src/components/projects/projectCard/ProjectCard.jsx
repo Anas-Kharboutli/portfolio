@@ -18,7 +18,7 @@ const ProjectCard = ({imgPath, title, description, gitUrl, previewUrl, languages
  
             <div className='project-preview'>
                 <p>See Live</p>
-               <p><a href={previewUrl}>
+               <p><a href={previewUrl} target='_blank' rel="noreferrer">
                   <MdPreview size={40} />
                 </a></p>
             </div>

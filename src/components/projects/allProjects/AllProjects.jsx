@@ -4,7 +4,6 @@ import { all_Projects } from '../../../utils/data';
 import ProjectCard from '../projectCard/ProjectCard';
 import { motion, useInView } from 'framer-motion';
 import ProjectTag from './projectTag/ProjectTag';
-import { Footer } from '../../exports';
 
 const AllProjects = () => {
   //Animated view
