@@ -41,3 +41,17 @@
         height: 1.5rem;
     }
 }
+
+@media (max-width: 425px) {
+
+    .eye {
+        margin: 30px;
+    }
+}
+
+@media (max-width: 321px) {
+
+    .eye {
+        margin: 20px;
+    }
+}
