@@ -1,12 +1,12 @@
 import React from 'react';
 import "./blog.css";
-import { Footer } from '../exports';
 
 const Blog = () => {
   return (
-    <div>
-      <h1>Blog</h1>
-    </div>
+    <section className='blog-container section__padding'>
+      <h1>My technical blog is in preparation..... </h1>
+      <h2>Coming Soon</h2>
+    </section>
   )
 }
 

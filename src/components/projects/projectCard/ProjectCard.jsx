@@ -13,20 +13,20 @@ const ProjectCard = ({imgPath, title, description, gitUrl, previewUrl, languages
       <div className='project-info'>
         <h1>{title}</h1>
         <p>{description}</p>
-        
+         
         <div className='project-summary'>
  
             <div className='project-preview'>
                 <p>See Live</p>
                <p><a href={previewUrl} target='_blank' rel="noreferrer">
-                  <MdPreview size={40} />
+                  <MdPreview className='preview-icon' />
                 </a></p>
             </div>
 
             <div className='project-github'>
                 <p>Github Repo.</p>
                 <p><a href={gitUrl} target='_blank' rel="noreferrer">
-                  <BsGithub size={35} />
+                  <BsGithub className='git-icon' />
                 </a></p>
             </div>
  

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 
@@ -31,6 +31,19 @@ const Icons = () => (
   </React.Fragment>
 );
 
+const ToggleIcon = ({onClick}) => {
+  return (
+  <div id="menuToggle" onClick={onClick}>
+  <input id="checkbox" type="checkbox" />
+  <label className="toggle" htmlFor="checkbox">
+      <div className="bar bar--top"></div>
+      <div className="bar bar--middle"></div>
+      <div className="bar bar--bottom"></div>
+  </label>
+</div>
+);
+};
+
 //Main Navbar Component
 const NavBar = () => {
   
@@ -39,16 +52,16 @@ const NavBar = () => {
        
       <ul>
           <li className='nav-item'>
-            <Link to="/" onClick={() => setToggleMenu(false)}>Home</Link>
+            <NavLink to="/" onClick={() => setToggleMenu(false)}>Home</NavLink>
           </li>
           <li className='nav-item'>
-            <Link to="/allProjects" onClick={() => setToggleMenu(false)}>All Projects</Link>
+            <NavLink to="/allProjects" onClick={() => setToggleMenu(false)}>Latest Work</NavLink>
           </li>
           <li className='nav-item'>
-            <Link to="/blog" onClick={() => setToggleMenu(false)}>Blog</Link>
+            <NavLink to="/blog" onClick={() => setToggleMenu(false)}>Blog</NavLink>
           </li>
           <li className='nav-item'>
-          <Link to="/contact" onClick={() => setToggleMenu(false)}>Contact</Link>
+          <NavLink to="/contact" onClick={() => setToggleMenu(false)}>Contact</NavLink>
           </li>
          </ul> 
     </React.Fragment>
@@ -78,12 +91,20 @@ const NavBar = () => {
       <div className='logo'>
       <NameLogo />     
       </div>
-
+     
       {toggleMenu ? 
-       <RiCloseLine size={45} className='x-icon' onClick={() => setToggleMenu(false)} />
+       <RiCloseLine className='closed-icon' onClick={() => setToggleMenu(false)} />
        :
-       <RiMenu3Line size={45} onClick={() => setToggleMenu(true)} />
+       <RiMenu3Line className='line-icon' onClick={() => setToggleMenu(true)} />
       }  
+       
+   
+      
+ 
+     
+     
+
+     
       </div>
     
     <div className= {`mobile-menu-container ${toggleMenu ? "active" : ""}`}>

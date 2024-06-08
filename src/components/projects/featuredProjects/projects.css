@@ -4,12 +4,13 @@
 }
 
 .project {
-    width: 27rem;     
+    width: 100%;    
+     
 } 
 
 .projects-container h1 {
     text-align: center;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
     font-size: 2.5rem;
     padding-top: 0;
 
@@ -45,7 +46,7 @@
     padding: 1rem 2rem;
     border-radius: 0.4rem;
     margin: 1rem 0 0;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
     font-size: 1rem;
     cursor: pointer;
 }
@@ -56,7 +57,7 @@
 
 .full-projects-navigate {
     text-align: center;
-    transform: translateY(150%);
+    transform: translateY(50%);
 }
 
 .full-projects-navigate button{
@@ -67,7 +68,7 @@
     padding: 1.7rem 2.7rem;
     border-radius: 40px;
     margin: 1.8rem 0 0;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
     font-size: 1.7rem;
     cursor: pointer;
 }
@@ -77,12 +78,19 @@
 }
 
 @media (max-width: 769px) {
+
+    .projects-cards {
+        display: flex;
+       align-items: center;
+      
+     }
+
     .projects-container h1 {
         font-size: 2.2rem;
     }
 
     .project {
-        width: 23rem;     
+        width: 40rem;     
     } 
 
     .left-icon,
@@ -97,10 +105,15 @@
     }
     
     .full-projects-navigate button{
-        padding: 1.5rem 2.5rem;
+        padding: 1.3rem 2.2rem;
         margin: 1.8rem 0 0;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
+    .full-projects-navigate {
+        text-align: center;
+        transform: translateY(60%);
+    }
+    
 }
 
 @media (max-width: 425px) {
@@ -126,12 +139,12 @@
     }
 
     .full-projects-navigate {
-        transform: translateY(190%);
+        transform: translateY(170%);
     }
     
     .full-projects-navigate button{
-        padding: 1.2rem 2.2rem;
-        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -139,4 +152,7 @@
     .project {
         width: 14rem;     
     }
+    .full-projects-navigate {
+        transform: translateY(160%);
+    }    
 }

@@ -1,6 +1,6 @@
 .heading h1 {
     text-align: center;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
     font-weight: 600;
     font-size: 2.5rem;
     padding-top: 0;
@@ -8,8 +8,8 @@
 }
 
 .all-projects-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 3.5rem;
 }
 

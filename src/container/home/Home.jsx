@@ -1,5 +1,5 @@
 import React from 'react';
-import { EyesShape, Hero, Skills, AboutMe, Projects, WorkExperience, Contact, Footer } from '../../components/exports';
+import { Hero, Skills, AboutMe, Projects, WorkExperience, Contact } from '../../components/exports';
 
 
 
@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <React.Fragment>
       <Hero />
-      <Skills />
       <Projects />
+      <Skills />
       <AboutMe />
       <WorkExperience />
       <Contact />

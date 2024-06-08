@@ -1,6 +1,7 @@
 .hero-section {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+    
 }
 
 .portrait img {
@@ -8,11 +9,19 @@
     width: 16rem;
     height: 19rem;
     border-radius: 0.75rem;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
 }
+
+.portrait img:hover {
+    transform: translateY(-5px);
+}
+
 
 .hero-description {
     margin-top: 2.5rem;
 }
+
 
 .hero-description p:first-child {
     font-size: 0.8rem;
@@ -28,7 +37,7 @@
     font-size: 4rem;
     text-align: start;
     margin-bottom: 0;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
 }
 
 .hero-description h2 {
@@ -37,18 +46,18 @@
     font-family: var(--font-p);
 }
 
-.hero-description button {
+.let-us-talk-btn {
     margin-top: 1.5rem;
     background: rgb(39, 38, 38);
     border-radius: 0.3rem;
     border: none;
     color: white;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
     font-size: 1rem;
     padding: 0.8rem 1.7rem;
 }
 
-.hero-description button:hover {
+.let-us-talk-btn:hover {
     background: black;
     cursor: pointer;
 }

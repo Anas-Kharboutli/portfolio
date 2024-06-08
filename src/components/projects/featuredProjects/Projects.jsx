@@ -22,7 +22,7 @@ const Projects = () => {
   var settings = {
     arrows: false,
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 650,
     slidesToShow: 1,
     slidesToScroll: 1
@@ -30,7 +30,7 @@ const Projects = () => {
 
   return (
     
-    <div className='projects-container section__padding'>
+    <div className='projects-container section__margin'>
       <h1>PROJECTS</h1>
 
       <EyesShape />
@@ -58,7 +58,7 @@ const Projects = () => {
 
       <div className='full-projects-navigate'>
         <Link to="/allProjects">
-          <button>Show Me All</button>
+          <button>Show me All</button>
         </Link>
       </div>
        </Slider>

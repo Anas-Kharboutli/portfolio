@@ -21,10 +21,10 @@ const Hero = () => {
         <h2>
         <TypeAnimation
       sequence={[
-        
+         
         'Full Stack Web Developer',
         1500, 
-        'Welcome to Connect !',
+        'Let us Connect !',
         1500,
        
       ]}
@@ -40,7 +40,11 @@ const Hero = () => {
           digital experience.
         </p>
 
-        <Link to='/contact'><button>Let's Talk</button></Link>
+        <Link to='/contact'>
+          <button className='let-us-talk-btn'>
+          <span>Let's Talk</span>
+          </button>
+          </Link>
       
       </motion.div>
     </section>

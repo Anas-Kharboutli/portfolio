@@ -1,6 +1,12 @@
 .project-card-container {
     border: 1.5px solid rgb(232, 224, 224);
-    border-radius: 0.3rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content:space-around;
+    background: linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(205, 231, 229, 1) 49%, rgba(249, 236, 236, 1) 100%);
+
 }
 
 .project-img {
@@ -10,17 +16,17 @@
 
 .project-img img {
     border-radius: 0.3rem;
-    width: 100%;
+    width: 25rem;
     height: 14rem;
-    box-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 8px;
 }
 
 .project-info h1 {
     text-align: start;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
     font-size: 1.5rem;
     padding-left: 1rem;
-    margin: 0;
+    margin-top: 0.5rem;
 }
  
 .project-info p {
@@ -29,15 +35,15 @@
 }
 
 .project-summary {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     font-family: var(--font-p);
 }
 
 .project-summary p {
     padding: 0;
     text-align: start;
-    font-family: var(--font-rubik);
+    font-family: var(--font-r);
 }
 
 .project-summary p:first-child {
@@ -54,8 +60,8 @@
 
 .project-preview p,
 .project-github p {
-    padding: 0;
-    border-right: 1.5px solid rgb(232, 224, 224);
+    padding-right: 3.5rem;
+    border-right: 1.5px solid black;
     
 }
 
@@ -72,19 +78,49 @@
     list-style: none;
 }
 
+.preview-icon {
+    font-size: 3.5rem;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.git-icon {
+    font-size: 3rem;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.preview-icon:hover,
+.git-icon:hover {
+    scale: 1.2;
+    
+}
+
 
 @media (max-width: 769px) {
     .project-img img {
-        width: 100%;
-        height: 11rem;
+        width: 15rem;
+        height: 10rem;
     }
 
     .project-info h1 {
-        font-size: 1.3rem;   
+        font-size: 1.4rem;    
     }
 
     .project-summary p {
         font-size: 0.6rem;
+    }
+
+    .project-preview p:first-child,
+    .project-github p:first-child,
+    .project-languages p:first-child {
+        font-size: 0.8rem;
+    }
+
+    .project-preview p,
+    .project-github p {
+    padding-right: 2rem;
+    
     }
 
     .project-preview,
@@ -104,5 +140,61 @@
 
     .project-languages ul {
         font-size: 0.8rem;
+    }
+
+    .preview-icon,
+    .git-icon  {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .project-card-container {
+        flex-direction: column;
+    
+    }
+
+    .project-img img {
+        width: 11rem;
+        height: 6rem;
+    }
+
+    .project-info h1 {
+        font-size: 1.1rem;    
+    }
+
+    .project-info p {
+        font-size: 0.9rem;    
+    }
+
+    .preview-icon,
+    .git-icon  {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+   
+    .project-info h1 {
+        font-size: 1rem;    
+    }
+
+    .project-info p {
+        font-size: 0.7rem;    
+    }
+
+    .preview-icon,
+    .git-icon  {
+        font-size: 1.8rem;
+    }
+
+    .project-preview p,
+    .project-github p {
+    padding-right: 1rem;
+    }
+
+    .project-languages ul {
+        font-size: 0.7rem;
     }
 }
