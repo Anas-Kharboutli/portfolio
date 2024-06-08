@@ -8,12 +8,10 @@ import { AiOutlineGithub } from "react-icons/ai";
 //Logo
 const NameLogo = () => {
   const navigate = useNavigate();
-  useEffect(() => {
-    navigate('/')
-  }, [])
+
   return (
     <React.Fragment>
-    <a href='/' onClick={() => navigate}>
+    <a href='/' onClick={() => navigate('/')}>
     <img src='/images/logo.png' alt='logo' />
     </a>  
   </React.Fragment>
@@ -30,19 +28,6 @@ const Icons = () => (
       </a>
   </React.Fragment>
 );
-
-const ToggleIcon = ({onClick}) => {
-  return (
-  <div id="menuToggle" onClick={onClick}>
-  <input id="checkbox" type="checkbox" />
-  <label className="toggle" htmlFor="checkbox">
-      <div className="bar bar--top"></div>
-      <div className="bar bar--middle"></div>
-      <div className="bar bar--bottom"></div>
-  </label>
-</div>
-);
-};
 
 //Main Navbar Component
 const NavBar = () => {
