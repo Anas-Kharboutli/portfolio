@@ -191,7 +191,7 @@
 
     .project-preview p,
     .project-github p {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     }
 
     .project-languages ul {

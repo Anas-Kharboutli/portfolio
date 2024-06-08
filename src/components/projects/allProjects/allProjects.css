@@ -41,3 +41,11 @@
         gap: 1.7rem;
     }
 }
+
+
+
+@media (max-width: 375px) {
+    .all-projects-section {
+        padding: 1rem 1.5rem;
+    }
+}
