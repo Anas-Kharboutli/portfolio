@@ -1,8 +1,7 @@
 {
-  "homepage": "https://github.com/Anas-Kharboutli/portfolio",
   "name": "my-official-portfolio",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@testing-library/jest-dom": "^5.17.0",
@@ -23,8 +22,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
