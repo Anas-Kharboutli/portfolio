@@ -198,11 +198,18 @@
         padding: ;
         margin: 0;
     }
+ }
 
-    .soft-skills-container {
+ @media (max-width: 321px) {
 
+    .frontend-skills li,
+    .backend-skills li {
+        font-size: 1rem;
     }
 
-
+    .other-skills-container span,
+    .soft-skills-container span {
+        font-size: 0.9rem;
+    }
  }
  

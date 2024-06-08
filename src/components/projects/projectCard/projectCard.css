@@ -156,12 +156,12 @@
     }
 
     .project-img img {
-        width: 11rem;
-        height: 6rem;
+        width: 13rem;
+        height: 7rem;
     }
 
     .project-info h1 {
-        font-size: 1.1rem;    
+        font-size: 1.2rem;    
     }
 
     .project-info p {
@@ -175,13 +175,18 @@
 }
 
 @media (max-width: 375px) {
+
+    .project-img img {
+        width: 12rem;
+        height: 7rem;
+    }
    
     .project-info h1 {
-        font-size: 1rem;    
+        font-size: 1.1rem;    
     }
 
     .project-info p {
-        font-size: 0.7rem;    
+        font-size: 0.8rem;    
     }
 
     .preview-icon,

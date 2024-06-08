@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaLinkedin } from "react-icons/fa";
 import { AiOutlineGithub } from "react-icons/ai";
 
 //Logo
 const NameLogo = () => {
-  const navigate = useNavigate();
 
   return (
     <React.Fragment>
-    <a href='/' onClick={() => navigate('/')}>
+    <NavLink to='/'>
     <img src='images/logo.png' alt='logo' />
-    </a>  
+    </NavLink>  
   </React.Fragment>
   );
 };

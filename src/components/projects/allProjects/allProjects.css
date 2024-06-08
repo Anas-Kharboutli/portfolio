@@ -42,10 +42,11 @@
     }
 }
 
-
-
 @media (max-width: 375px) {
     .all-projects-section {
         padding: 1rem 1.5rem;
+    }
+    .tag-btns {
+        gap: 0.4rem;       
     }
 }

@@ -119,7 +119,8 @@
         line-height: 1.6rem;
     }
 
-    .nav-item {
+    .navigation li {
+        
         font-size: 0.9rem;
     }
 }
