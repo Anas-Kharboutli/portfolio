@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className='hero-section section__padding'>
       <div className='portrait'>
-        <img src='/images/my-portrait.png' alt='my-portrait' />
+        <img src='images/my-portrait.png' alt='my-portrait' />
       </div>
 
       <motion.div 

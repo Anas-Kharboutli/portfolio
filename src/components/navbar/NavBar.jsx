@@ -12,7 +12,7 @@ const NameLogo = () => {
   return (
     <React.Fragment>
     <a href='/' onClick={() => navigate('/')}>
-    <img src='/images/logo.png' alt='logo' />
+    <img src='images/logo.png' alt='logo' />
     </a>  
   </React.Fragment>
   );

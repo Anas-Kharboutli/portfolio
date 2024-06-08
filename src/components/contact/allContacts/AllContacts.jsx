@@ -2,7 +2,7 @@ import React from 'react';
 import "./allContacts.css";
 import Contact from '../Contact';
 import { MdEmail } from "react-icons/md";
-import { FaWhatsappSquare } from "react-icons/fa";
+import { FaWhatsappSquare, FaDiscord  } from "react-icons/fa";
 import { FaViber, FaXTwitter } from "react-icons/fa6";
 
 
@@ -16,6 +16,8 @@ const MyContacts = () => (
             <span>@AnasKharboutli</span>
             <FaViber className='viber-icon' />
             <span>+48 - 534 817 111</span>
+            <FaDiscord className='discord-icon' />
+            <span>anas_kharboutli</span>
         </div>      
 );
 

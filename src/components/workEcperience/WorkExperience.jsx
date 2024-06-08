@@ -7,7 +7,7 @@ const WorkExperience = () => {
       <h1>WORK EXPERIENCE</h1>
       <div className='work-experience-container'>
         <div className='accenture-container'>
-          <img className='co-icon' src='/images/Accenture-Logo.png' alt='accenture' />
+          <img className='co-icon' src='images/Accenture-Logo.png' alt='accenture' />
           <p>Bilingual Data Analyst  </p>
           <p> Mar - 2015 to Jan - 2018 </p>
           <p>What i did:</p>
@@ -22,7 +22,7 @@ const WorkExperience = () => {
         </div>
 
         <div className='cognizant-container'>
-          <img className='co-icon' src='/images/Cognizant-Logo.png' alt='cognizant' />
+          <img className='co-icon' src='images/Cognizant-Logo.png' alt='cognizant' />
           <p>Senior Process Executive </p>
           <p> Feb - 2018 to Oct - 2023  </p>
           <p>What i did:</p>

@@ -25,7 +25,7 @@ const AboutMe = () => {
     <section className='about-me-container'>
       
       <div className='about-img'>
-        <img src='/images/about-photo.png' alt='about' />
+        <img src='images/about-photo.png' alt='about' />
         <div className='contact-btn'>
         <Link to="/contact">
           <button>Let's Talk</button>
